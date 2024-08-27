@@ -67,27 +67,20 @@ nav ul {
 .menu_um li:nth-child(1):hover{
   background-color: var(--cor4);
 }
-.menu_um li:nth-child(1) a:hover{
-  color: white;
-}
-
 .menu_um li:nth-child(2):hover{
   background-color: var(--cor5);
-}
-.menu_um li:nth-child(2) a:hover{
-  color: white;
 }
 
 .menu_um li:nth-child(3):hover{
   background-color: var(--cor6);
 }
-.menu_um li:nth-child(3) a:hover{
-  color: white;
-}
 
 .menu_um li:nth-child(4):hover{
   background-color: var(--cor7);
 }
+.menu_um li:nth-child(1) a:hover,
+.menu_um li:nth-child(2) a:hover,
+.menu_um li:nth-child(3) a:hover,
 .menu_um li:nth-child(4) a:hover{
   color: white;
 }
@@ -98,10 +91,6 @@ nav ul {
 .menu_dois li,
 .menu_dois a{
   transition: all 0.5s ease;
-}
-
-.menu_dois a{
-  display: inline-block;
 }
 
 .menu_dois li:hover {
