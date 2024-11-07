@@ -21,10 +21,10 @@ body{
   --cor1: hsl(0, 0%, 98%);
   --cor2: hsl(0, 0%, 41%);
   --cor3: hsl(0, 0%, 8%);
-  --cor4: hsl(243, 79%, 67%);
+  --cor4: hsl(243, 79%, 67%, 0.700);
   --cor5: hsl(53, 76%, 54%);
-  --cor6: hsl(197, 65%, 57%);
-  --cor7: hsl(277, 42%, 50%);
+  --cor6: hsl(197, 65%, 57%, 0.700);
+  --cor7: hsla(277, 42%, 50%, 0.700);
 }
 
 .cor1{
@@ -49,14 +49,27 @@ body{
 
 
 
-.container-desktop{
+.container{
   max-width: 1440px;
   margin: 0 auto;
   padding: 0px 20px;
 }
 
-.container-mobile{
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0px 10px;
+
+
+@media (max-width: 850px){
+  .container{
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0px 10px;
+  }
+
+  .menu_geral_desktop{
+    display: none;
+   }
+  
+  .menu_mobile{
+    display: none;
+  }
 }
+

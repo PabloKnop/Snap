@@ -1,0 +1,22 @@
+@media (max-width: 850px){
+  header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .close__open {
+    display: block;
+  }
+
+
+  .close__open img{
+    width: 40px;   
+  }
+
+
+  .close{
+    display: none;
+  }
+  
+}

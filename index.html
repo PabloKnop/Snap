@@ -11,29 +11,45 @@
 </head>
 
 <body>
-  <header class="container-desktop">
+  <header class="container">
     <picture>
       <img src="images/logo.svg" alt="">
     </picture>
-    <nav>
-      <ul class="menu_um">
-        <li><a href="http://">Features</a></li>
-        <li><a href="http://">Company</a></li>
+    <nav class="menu_geral_desktop">
+      <ul class="menu_um_desktop">
+        <li>
+          <a href="http://">Features<img src="./images/icon-arrow-down.svg" alt="seta-baixo"></a>
+        </li>
+        <li><a href="http://">Company<img src="./images/icon-arrow-down.svg" alt="seta-baixo"></a></li>
         <li><a href="http://">Careers</a></li>
         <li><a href="http://">About</a></li>
       </ul>
-      <ul class="menu_dois">
+      <ul class="menu_dois_desktop">
+        <li><a href="http://">Login</a></li>
+        <li><a href="http://">Register</a></li>
+      </ul>
+    </nav>
+    <div class="close__open">
+      <img class="open" src="./images/icon-menu.svg" alt="">
+      <img class="close" src="./images/icon-close-menu.svg" alt="">
+    </div>
+    <nav class="menu_mobile">
+      <ul>
+        <li><a href="http://">Features<img src="./images/icon-arrow-down.svg" alt="seta-baixo"></a></li>
+        <li><a href="http://">Company<img src="./images/icon-arrow-down.svg" alt="seta-baixo"></a></li>
+        <li><a href="http://">Careers</a></li>
+        <li><a href="http://">About</a></li>
         <li><a href="http://">Login</a></li>
         <li><a href="http://">Register</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container-desktop">
-    <div>
+  <main class="container">
+    <div class="make-remote">
       <h1>Make remote work</h1>
-      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-      <a href="http://"></a>
-      <div>
+      <p class="cor2">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a href="http://">Learn More</a>
+      <div class="patrocinios">
         <picture>
           <img src="images/client-databiz.svg" alt="">
         </picture>
@@ -48,10 +64,17 @@
         </picture>
       </div>
     </div>
-    <picture>
-      <img src="images/image-hero-desktop.png" alt="">
-    </picture>
+    <div>
+      <picture class="hero">
+        <source media="(max-width: 850px)" srcset="images/image-hero-mobile.png">
+        <img src="images/image-hero-desktop.png" alt="">
+      </picture>
+    </div>
   </main>
+  <footer class="container">
+    <p>Challenge by Frontend Mentor. Coded by Eu.</p>
+  </footer>
 </body>
+<script src="jsteste.js"></script>
 
 </html>

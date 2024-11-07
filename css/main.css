@@ -1,0 +1,109 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+
+.hero img{
+  min-width: 300px;
+  height: 700px;
+  width: 100%;
+  object-fit: contain;
+  object-position: right;
+  margin-top: 50px;
+}
+
+.make-remote h1{
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+.make-remote p{
+  font-size: 1.050rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.make-remote a{
+  font-size: 1.2rem;
+  border: 2px solid black;
+  display: block;
+  justify-self: start;
+  border-radius: 7.5px;
+  background-color: black;
+  color: var(--cor1);
+  padding: 7.5px 13px;
+  transition: all 0.5s ease;
+  margin-bottom: 30px;
+}
+
+.make-remote a:hover{
+ transform: translateY(-5px);
+}
+
+
+.make-remote{
+  margin-top: 50px;
+  max-width: 525px;
+  display: grid;
+  align-content: center;
+}
+
+.patrocinios{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.8s ease;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.patrocinios img{
+  width: 100%;
+}
+
+@media (max-width: 850px){
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .make-remote{
+    grid-area: 2;
+    }
+    
+    .patrocinios{
+      margin-top: 20px;
+      transition: all 0.8s ease;
+      gap: 15px;
+    }
+
+    .make-remote a{
+      margin-bottom: 20px;
+      transition: all 0.8s ease;
+      justify-self: center;
+    }
+
+    .make-remote h1{
+      font-size: 2.1rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .make-remote p{
+      font-size: 1.075rem;
+      line-height: 1.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .hero img{
+      width: 100%;
+      object-fit: contain;
+      margin-top: 60px;
+      height: auto;
+    }
+}
